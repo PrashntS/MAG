@@ -1,0 +1,2 @@
+# MAG
+Website for MAG.
