@@ -1,0 +1,800 @@
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat-Regular"), url(fonts/7de406d4-4a4d-4e5a-b390-6459742d23f2) format("woff")
+    }
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat-Bold"), url(fonts/6dc77f0e-2bd2-4984-89da-a4a623bdd916) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/019942bb-ec49-4f38-8508-d0001e61e859) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/d65226c4-a820-4856-80be-e0d1aa40f81f) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/ce75f175-6efe-4aab-b9b4-bad8b082a752) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/6d728993-557d-44d1-8006-365e834d6e23) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/429d23c9-0059-4d7c-a5e7-357ee0536d09) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/850465f6-4f9b-47e3-b64e-f973cc9274d9) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/13aff98d-3103-48f8-896a-eb2aede28f02) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/08962281-ca4a-4376-8415-20ec4ce6a432) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/4824d028-5ee7-4633-bda4-7e429eed813c) format("woff")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/efba3582-7f52-45c1-9287-89819a4619f7) format("woff")
+    }
+/* latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat-Regular"), url(fonts/e9050a29-a3ac-4e40-a509-babb9231d652) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* latin */
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat-Bold"), url(fonts/efbc0ea4-bc3e-417c-9f5b-96857ab0023d) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/d6a75f6b-c196-4e5b-80af-091d403c0a2f) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/3bafa96e-d07f-4c8e-a3ca-6d2ce341954b) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/52d8a3b6-d0a5-4928-bf5a-bfcc38e225a2) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/fc84fe2f-8c12-4b3e-98f1-bd4ff3b4225e) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/55a0f1cd-0518-46e0-a47c-b59e1bcf4acb) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/a7ab742b-1b81-4c44-ac69-e7d3aed0d150) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/0cb514bc-8342-4510-b265-840ab327f711) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/bdde1332-86da-4998-b161-672892fec265) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/5f2718de-30b0-4d22-ab1b-e8bbcd2cb061) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/f84dd5b0-00fc-47c8-9b72-747fef3d242f) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/e8ab67ed-20fe-4ead-b36f-8affbff11849) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/0c5d15a7-df6d-4b84-8616-62933d6465c7) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/fcae8840-5603-45e0-9bc0-ac12038987be) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/3b16f754-9241-4db7-a9d5-dea171d5ea7f) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/098e3e01-1532-4fe4-82b4-13fe04cd14b4) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/d5f4a7fc-3fc7-4f17-af2e-7a9cd2fe039a) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/4adf9ca0-2054-40f1-9db8-ee564d83dfa8) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/878f21da-cf4a-4afc-b3ca-76feb5af700e) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/50d83b40-a0e9-4ce5-9274-a0886d1951be) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/53e37b66-47d1-4db8-938b-5203dd00fd27) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/3d024986-e624-4e81-b288-15a364c30270) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/c6fc8c6c-6382-4c0d-b114-7a035dd54afc) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/9bc953aa-a04b-401b-8578-dc5155a203b9) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/787a85da-dbdc-4bb0-b999-ce8c4c50c136) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/9501f8cf-b9d3-4825-9b4b-6de0ce9ee21d) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/393aee15-f70e-4176-bf02-0b31b3bc10cd) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/edfd8a5d-085c-421d-a452-484aa349649e) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/7123a247-f46f-4746-b9c8-e2f576f142aa) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/55fde60e-4cbd-444b-9b4f-34b16a76cfbf) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/e4a8ea38-62e3-48ae-aca7-0da95430d191) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/c4a71d12-59c2-436b-a2ec-ffddd3f55f86) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/3c1ade79-eb81-4ae0-9a0a-c4fa792d8e53) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/4f71e0b4-8674-4d26-91be-6709ea3ca596) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/5a329628-2b1e-44d0-8040-95521e311e7c) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/e79ff512-2648-413c-941f-7b15b636061d) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/823ea829-73c0-45ed-8ada-b7fb1450745b) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/d53d39d5-1e89-498c-9f5b-ff7a0b4d861f) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/e91069dc-64ec-42d2-819b-f1e03008d3e5) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/51df02b7-f072-4917-9bed-9ac1191c2b42) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/269a45d8-b52b-4649-a6cd-893b5a88428e) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/b7400542-e17c-42c0-a313-0e660431e0ec) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/6c93be83-f8ab-427d-956d-7b8c4ffeba39) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/2b1a8859-19e9-4762-a631-34f0fd01745e) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/5eab5bed-6d20-4bd6-a171-8faa0a0af7c0) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/98282583-3188-4436-9e6f-455083ddc786) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/ae74427e-8acd-4278-98c4-44992ffd0736) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/daf71a0b-09f0-4355-b0f0-2dd9dd9ca128) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/925008da-551c-4cdf-b34a-ca1c06b8a172) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/d3dac830-8750-4987-aed2-9d4e7f93ff9f) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/13c8678b-bf78-419c-9cd5-2d5aeee44353) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/fbbc9af9-f48e-473f-9b2a-cf2a3c635539) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/7035d463-d70e-48fa-8d04-c4a1ec1e0535) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/223bd4cf-9563-49bd-ae33-be9523403b71) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/dd42d67e-4097-4ed4-b9f2-c735bca591a5) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/a6f957bc-394f-49a2-af97-8de4caa23dbe) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/d893f8f4-7f08-48b9-825d-e12790e9194a) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/79712277-e794-4ea3-987c-4f166c65e863) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/9f79c357-1424-4fb5-a47f-b185b88bc1af) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/518b5ebc-f935-4f0a-b2dd-654b99134d9e) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/c1c562e2-5128-4168-8bd7-e9832b38f830) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/7f3ab844-672d-4858-92e4-ae9cd490c2cc) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/8f6b61c6-0571-41a3-84c5-00e55e0f4ced) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/fbfad369-0d5f-41df-9172-13480885fd6c) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/38781c3e-a34f-4d05-b39b-94389d940053) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/1bc0f131-5f10-4b8d-91ad-fd77785ac1b8) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/ec469256-12f5-4927-9df4-8f0644a05af2) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/1d07a579-4193-4f7c-a5a0-0cc916cbc0b8) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/af6d77af-8586-4ad2-aeec-ef899b230faa) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/7a863b33-d106-48a3-996e-b862ff0dfed5) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/c728e563-566f-433e-884d-643f4f685339) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/9ff06ff5-0ccd-4ee0-af2b-94f0be8892f9) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/d21b463f-2c81-4861-98d4-303110d774b6) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+/* cyrillic-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/e4540b5d-abe8-4918-b80f-304231aefdb6) format("woff2");
+    unicode-range: u+0460-052f, u+20b4, u+2de0-2dff, u+a640-a69f
+    }
+/* cyrillic */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/c5ec733a-948c-470a-8a2a-d6f9296b8a17) format("woff2");
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+    }
+/* devanagari */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/085a8be4-cef6-477c-b637-355128b29407) format("woff2");
+    unicode-range: u+02bc, u+0900-097f, u+1cd0-1cf6, u+1cf8-1cf9, u+200b-200d, u+20a8, u+20b9, u+25cc, u+a830-a839, u+a8e0-a8fb
+    }
+/* greek-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/3af48352-5e33-43bf-80e5-461cfddee73e) format("woff2");
+    unicode-range: u+1f00-1fff
+    }
+/* greek */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/b9fc9993-ed04-4ce4-900a-4d931e15e9e8) format("woff2");
+    unicode-range: u+0370-03ff
+    }
+/* vietnamese */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/e32ff757-f07e-4ad4-8f8e-cdcfe28d942d) format("woff2");
+    unicode-range: u+0102-0103, u+1ea0-1ef1, u+20ab
+    }
+/* latin-ext */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/40e8e916-2b00-40fe-9f93-7dbf5e4f3e06) format("woff2");
+    unicode-range: u+0100-024f, u+1e00-1eff, u+20a0-20ab, u+20ad-20cf, u+2c60-2c7f, u+a720-a7ff
+    }
+/* latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/c6f5698d-b2d7-4f91-8dd2-ca52c0bb27a1) format("woff2");
+    unicode-range: u+0000-00ff, u+0131, u+0152-0153, u+02c6, u+02da, u+02dc, u+2000-206f, u+2074, u+20ac, u+2212, u+2215, u+e0ff, u+effd, u+f000
+    }
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat-Regular"), url(fonts/4ac050bc-817a-4514-8c5e-e19ee97c7e43) format("truetype")
+    }
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat-Bold"), url(fonts/eb914e33-be94-4d76-952c-b0fdbe7e4699) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(fonts/20a14538-1b5e-4645-b7f6-3eab147d2b30) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans"), local("OpenSans"), url(fonts/6fada795-b136-4c67-8596-e72a78f61366) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url(fonts/420cd40d-66b9-4db6-ad4d-d8c5bc367f06) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(fonts/0e0dcc69-9759-40c3-9a69-af1d7ed236a3) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(fonts/39c6d65b-f71e-4c03-9bfd-5d4035405adf) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 300;
+    src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(fonts/4372f4d7-1278-429f-a6e8-952dfd4e0c65) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Open Sans Italic"), local("OpenSans-Italic"), url(fonts/1e7c4210-6c6a-4e67-bbcb-d09f925305b2) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url(fonts/f4df837b-ee39-4793-8a78-ba4ef832271e) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(fonts/d04a2f4c-0810-47f9-8723-d02601119992) format("truetype")
+    }
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 800;
+    src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(fonts/37463c71-2046-44b8-acc1-933efa86c038) format("truetype")
+    }
