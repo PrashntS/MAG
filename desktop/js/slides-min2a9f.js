@@ -9,7 +9,7 @@
         function b(d, c) {
             d instanceof Function && d.call(c)
         }
-        this.name = "why_circuitmaker";
+        this.name = "who";
         this.show = Modernizr.csstransforms ? f : b;
         this.hide = function(d, c) {
             d instanceof Function && d.call(c)
@@ -230,7 +230,7 @@
         var c = m(".last-slide-image")
     }
     SLIDE_CLASS = {
-        why_circuitmaker: n,
+        who: n,
         remove_the_barriers: p,
         free_and_extendable: q,
         bring_your_ideas_to_life: r,
