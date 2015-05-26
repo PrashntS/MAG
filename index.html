@@ -45,7 +45,6 @@
                     <a href="#free_and_extendable" title="Free and Extendable" data-marker="trackGoogleEvent[mainnavigationclick, free];go[2]">How we do it?</a>
                 </li>
                 <li>
-                    <a href="#bring_your_ideas_to_life" title="Bring Your Ideas to Life" data-marker="trackGoogleEvent[mainnavigationclick, yourideas];go[3]">Your Ideas</a>
                 </li>
             </ul>
         </div>
@@ -93,24 +92,58 @@
             <div class="bg"></div>
 
             <div class="content">
-                <h2>We Bridge the Gap</h2>
-
-                <p></p>
-
-                <div class="buttons">
-                    <a href="#make_things_happen" class="btn-join" data-marker="trackGoogleEvent[joinustodayclick, joinus];go[4]">Join Us Today</a>
-                    <a href="#bring_your_ideas_to_life" class="btn-next" data-marker="trackGoogleEvent[nextstepclick, yourideas];go[3]">Next Step</a>
+                <h2>Lets Bridge the Gap</h2>
+                <p>Contact us to know more about our products.</p>
+                <div>
+                    <form action="/register" method="POST" class="contact-form">
+                        <div class="form-element">
+                            <p>Your Name</p>
+                            <input type="text" name="Name" placeholder="Nico Hades" data-tab="three">
+                        </div>
+                        <div class="form-element">
+                            <select>
+                                <option selected disabled>You are a</option>
+                                <option>Teacher</option>
+                                <option>Student</option>
+                                <option>Parent</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                        <div class="form-element">
+                            <p>Your Contact Details</p>
+                            <input type="email" name="email" placeholder="Email ID" required class="inline">
+                            <input type="tel" name="mobile" placeholder="Mobile Number" required class="inline">
+                        </div>
+                        <div class="form-element">
+                            <p>Your Message</p>
+                            <textarea name="data"></textarea>
+                        </div>
+                        <button type="submit" class="btn-join">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
 
-        <section data-marker="slide[bring_your_ideas_to_life]" class="slide bring_your_ideas_to_life">
+        <!--section data-marker="slide[bring_your_ideas_to_life]" class="slide bring_your_ideas_to_life">
             <div class="bg" style="background:red"></div>
 
             <div class="content">
                 <h2>Bring Your Ideas to Life</h2>
 
-                <p></p>
+                <div>
+                    <form action="/register" method="POST">
+                        <input type="text" name="Name" placeholder="Nico Hades" data-tab="three">
+                        <select>
+                            <option>Teacher</option>
+                            <option>Student</option>
+                            <option>Parent</option>
+                            <option>Others</option>
+                        </select>
+                        <input type="email" name="email" placeholder="Email ID" required>
+                        <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                        <textarea name="data"></textarea>
+                    </form>
+                </div>
 
                 <div class="buttons">
                     <a href="#make_things_happen" class="btn-join" data-marker="trackGoogleEvent[joinustodayclick, joinus];go[4]">Join Us Today</a>
@@ -126,7 +159,7 @@
             </div>
 
             <div class="decor"></div>
-        </section>
+        </section-->
     </div>
 </section>
 <!--    BODY-->

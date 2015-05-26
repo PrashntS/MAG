@@ -1583,7 +1583,7 @@ html.browser-msie-v8.mode-small body {
 }
 .free_and_extendable .content {
     left: 1411px;
-    top: 153px
+    top: 10px;
 }
 .free_and_extendable .content h2 {
     font-size: 42px;
@@ -1641,7 +1641,7 @@ html.browser-msie-v8.mode-small body {
 }
 .mode-small .free_and_extendable .content {
     left: 879px;
-    top: 123px
+    top: 10px
 }
 .mode-small .free_and_extendable .content h2 {
     font-size: 32px;
@@ -2425,4 +2425,45 @@ html.browser-msie-v8.mode-small body {
     width: 53%;
     top: 20px;
     bottom: -18px
+}
+
+.contact-form .form-element {
+    margin: 0 0 10px 0;
+}
+.contact-form .form-element p {
+    margin: 0 0 0 0;
+    padding: 0 !important;
+    font-size: 16px !important;
+}
+
+.contact-form .form-element input {
+    width: 50%;
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid #AAA;
+}
+
+.contact-form .form-element select {
+    margin-top: 8px;
+    background: transparent;
+    border: 1px solid #AAA;
+    font-size: 14px;
+    height: 29px;
+    width: 40%;
+}
+
+.contact-form .form-element textarea {
+    width: 80%;
+    height: 100px;
+    margin-top: 8px;
+    background: transparent;
+    border: 1px solid #AAA;
+    font-size: 14px;
+}
+
+.contact-form button {
+    margin-top: 8px;
+    padding: 8px;
+    border: 1px solid #AAA;
+    background: #FFF;
 }
