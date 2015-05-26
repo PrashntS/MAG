@@ -143,7 +143,7 @@
             g.css("transition", "left 400ms ease-in-out")
         }
         var c = [];
-        this.name = "free_and_extendable";
+        this.name = "bridging_gap";
         this.show = Modernizr.csstransforms ? f : h;
         this.hide = function(a, b, f) {
             for (a = 0; a < c.length; clearTimeout(c[a++]));
@@ -232,7 +232,7 @@
     SLIDE_CLASS = {
         who: n,
         remove_the_barriers: p,
-        free_and_extendable: q,
+        bridging_gap: q,
         bring_your_ideas_to_life: r,
         make_things_happen: s
     };
