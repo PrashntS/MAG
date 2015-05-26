@@ -42,7 +42,7 @@
                     <a href="#remove_the_barriers" title="Remove the Barriers" data-marker="trackGoogleEvent[mainnavigationclick, streamlined];go[1]">What we do?</a>
                 </li>
                 <li>
-                    <a href="#free_and_extendable" title="Free and Extendable" data-marker="trackGoogleEvent[mainnavigationclick, free];go[2]">How we do it?</a>
+                    <a href="#free_and_extendable" title="Free and Extendable" data-marker="trackGoogleEvent[mainnavigationclick, free];go[2]">Bridging the Gap</a>
                 </li>
                 <li>
                 </li>
@@ -82,8 +82,8 @@
                 <p>Through activities and games that give learners the ability to construct Mathematics on their own, we help in evolving the conceptual clarity rather than mere rote learning or memorization.</p>
 
                 <div class="buttons">
-                    <a href="#make_things_happen" class="btn-join" data-marker="trackGoogleEvent[joinustodayclick, joinus];go[4]">Join Us Today</a>
-                    <a href="#free_and_extendable" class="btn-next" data-marker="trackGoogleEvent[nextstepclick, free];go[2]">Next Step</a>
+                    <!--a href="#make_things_happen" class="btn-join" data-marker="trackGoogleEvent[joinustodayclick, joinus];go[4]">Join Us Today</a-->
+                    <a href="#free_and_extendable" class="btn-next" data-marker="trackGoogleEvent[nextstepclick, free];go[2]">Know More</a>
                 </div>
             </div>
         </section>
@@ -94,33 +94,31 @@
             <div class="content">
                 <h2>Lets Bridge the Gap</h2>
                 <p>Contact us to know more about our products.</p>
-                <div>
-                    <form action="/register" method="POST" class="contact-form">
-                        <div class="form-element">
-                            <p>Your Name</p>
-                            <input type="text" name="Name" placeholder="Nico Hades" data-tab="three">
-                        </div>
-                        <div class="form-element">
-                            <select>
-                                <option selected disabled>You are a</option>
-                                <option>Teacher</option>
-                                <option>Student</option>
-                                <option>Parent</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
-                        <div class="form-element">
-                            <p>Your Contact Details</p>
-                            <input type="email" name="email" placeholder="Email ID" required class="inline">
-                            <input type="tel" name="mobile" placeholder="Mobile Number" required class="inline">
-                        </div>
-                        <div class="form-element">
-                            <p>Your Message</p>
-                            <textarea name="data"></textarea>
-                        </div>
-                        <button type="submit" class="btn-join">Submit</button>
-                    </form>
-                </div>
+                <form class="contact-form" onsubmit="return post()">
+                    <div class="form-element">
+                        <p>Your Name</p>
+                        <input type="text" name="Name" placeholder="Nico Hades" data-tab="three" >
+                    </div>
+                    <div class="form-element">
+                        <select name="Profession" >
+                            <option selected disabled>You are a</option>
+                            <option>Teacher</option>
+                            <option>Student</option>
+                            <option>Parent</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div class="form-element">
+                        <p>Your Contact Details</p>
+                        <input type="email" name="Email" placeholder="Email ID"  class="inline">
+                        <input type="tel" name="Mobile" placeholder="Mobile Number"  class="inline">
+                    </div>
+                    <div class="form-element">
+                        <p>Your Message</p>
+                        <textarea name="Message" ></textarea>
+                    </div>
+                    <button id="btn-sub" class="btn-join">Submit Form</button>
+                </form>
             </div>
         </section>
 
@@ -200,14 +198,12 @@
         <div class="pager" data-marker="pager">
             <a href="#who" data-marker="go[0]" title="Who We Are">.</a>
             <a href="#remove_the_barriers" data-marker="go[1]" title="What We Do">.</a>
-            <a href="#free_and_extendable" data-marker="go[2]" title="How We Do It">.</a>
-            <a href="#bring_your_ideas_to_life" data-marker="go[3]" title="Your Ideas">.</a>
-            <a href="#make_things_happen" data-marker="go[4]" title="Make Things Happen">.</a>
+            <a href="#free_and_extendable" data-marker="go[2]" title="Bridging the Gap">.</a>
         </div>
 
         <div class="site-info">
-            <a class="first" href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a>&nbsp;/&nbsp;
-            <a class="last" title="#" href="mailto:#" target="_blank">Contact Us</a>
+            <!--a class="first" href="privacy-policy.html" title="Privacy Policy">Privacy Policy</a>&nbsp;/&nbsp;
+            <a class="last" title="#" href="mailto:#" target="_blank">Contact Us</a-->
         </div>
     </div>
 </footer>
@@ -228,6 +224,25 @@
 <!--Custom scripts - End-->
 
 <div id="tag1212"></div>
+
+<script type="text/javascript">
+    var post = function () {
+        var uri = "http://backstage.ducic.ac.in/passthru/mathematicalgames13@gmail.com?" + $(".contact-form").serialize();
+        $.ajax({
+            url: uri,
+            beforeSend: function () {
+                $("#btn-sub").text("Sending your Message");
+                $("#btn-sub").attr("disabled", "");
+            }
+        }).done(function () {
+            $("#btn-sub").text("Sent Successfully");
+        }).fail(function () {
+            $("#btn-sub").text("Please try Again");
+            $("#btn-sub").removeAttr("disabled");
+        })
+        return false;
+    };
+</script>
 
 </body>
 </html>
